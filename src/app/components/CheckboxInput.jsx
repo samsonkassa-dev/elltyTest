@@ -43,16 +43,26 @@ const CheckboxInput = ({ id, label }) => {
           className="hidden"
         />
         <label htmlFor={id} className="cursor-pointer">
-          {(isChecked || isHovered) && (
+        {isHovered && (
             <div className="absolute top-0 left-0 w-[90%] h-full">
               <Image
-              className='text-white'
-                src="/Vector141.png"
-                alt="Checkmark"
+          
+                src="/Vector141.png" 
+                alt="Hover Image"
                 layout="fill"
                 objectFit="contain"
-              />{" "}
-           
+              />
+            </div>
+          )}
+          {isChecked && (
+            <div className="absolute top-0 left-0 w-[90%] h-full">
+              <Image
+          
+                src="/Vector128.png" 
+                alt="Checked Image"
+                layout="fill"
+                objectFit="contain"
+              />
             </div>
           )}
         </label>
