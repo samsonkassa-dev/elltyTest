@@ -20,8 +20,8 @@ const CheckboxInput = ({ id, label }) => {
   };
 
   return (
-    <div className="flex items-center justify-between mb-4">
-      <label htmlFor={id} className="text-gray-900 text-sm font-normal">
+    <div className="flex px-2 items-center justify-between mb-4">
+      <label htmlFor={id} className="text-[#1F2128] text-sm font-normal">
         {label}
       </label>
       <div
@@ -29,8 +29,8 @@ const CheckboxInput = ({ id, label }) => {
           isChecked
             ? "bg-blue-500 border-blue-500"
             : isHovered
-            ? "border-gray-600"
-            : "border-gray-300"
+            ? "border-[#BCBCBD]"
+            : "border-[#E1E0E0]"
         } rounded-md inline-block`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
